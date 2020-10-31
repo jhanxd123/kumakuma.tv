@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch - Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen Episode 1 in Kumakuma</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../snorlax_icon.ico" />
+    <link rel="stylesheet" href="../../../bootstrap-4.5.3/css/bootstrap.css">
+    <script src="../../../bootstrap-4.5.3/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../../bootstrap-4.5.3/js/popper.min.js"></script>
+    <script src="../../../bootstrap-4.5.3/js/bootstrap.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+</head>
+
+<style>
+    * {
+        scrollbar-color: #348fff #282a39;
+        scrollbar-width: thin;
+    }
+    
+    @font-face {
+        font-family: cRoboto;
+        src: url(../../../fonts/Roboto-Regular.woff);
+    }
+    
+    html,
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        font-family: cRoboto;
+    }
+    
+    hr {
+        background: white;
+    }
+    
+    footer {
+        padding: 30px 50px 20px 50px;
+        background-color: #282a39;
+    }
+    
+    .custom-buttom {
+        width: 100%;
+        font-size: 1.7vh;
+        position: absolute;
+        padding: 10px 20px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0, 0, 0, .6);
+    }
+    
+    .custom-card-body-padding {
+        padding: 10px 15px 10px 15px;
+    }
+    
+    .custom-card-col-padding {
+        padding: 0px 30px 0px 30px;
+    }
+    
+    .custom-card-padding {
+        padding: 40px 40px;
+    }
+    
+    .custom-bg {
+        background-color: #232533;
+    }
+    
+    .custom-nav-bg {
+        background-color: #282a39;
+    }
+    
+    .custom-container {
+        margin: 0 0;
+        padding: 0 0;
+    }
+    
+    .custom-margin {
+        margin: 0 0;
+    }
+    
+    .custom-bg-image {
+        min-height: 693px;
+        min-width: 100%;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../bg-images/wallpaper_yukino1blur.png');
+        z-index: 1;
+    }
+    
+    .topleft {
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    
+    #navbar {
+        background-color: transparent;
+        padding: 15px 100px 0px 120px;
+        transition: 0.4s;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        align-items: center;
+        z-index: 99;
+    }
+    
+    #navbar a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 1.05rem;
+        border-radius: 4px;
+        font-family: Roboto;
+        align-self: center;
+    }
+    
+    #img {
+        transition: 0.4s;
+        display: block;
+        padding: 0 0;
+    }
+    
+    #navbar-nav a:hover {
+        color: #348FFF;
+        transition: 0.4s;
+    }
+    
+    #navbar a.active {
+        color: #348FFF;
+    }
+    
+    #navbar-nav li {
+        display: inline-block;
+        margin-right: 5px;
+        position: relative;
+    }
+    
+    .un {
+        display: inline-block;
+        padding-bottom: 18px;
+        background-image: linear-gradient(#348FFF, #348FFF);
+        background-position: left bottom;
+        background-size: 0% 3px;
+        background-repeat: no-repeat;
+        transition: background-size 0.3s, background-position 0s 0.3s;
+    }
+    
+    .un:hover {
+        background-position: 100% 100%;
+        background-size: 100% 3px;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .text-left {
+        text-align: left;
+    }
+    
+    .text-right {
+        text-align: right;
+    }
+    
+    .mt-50 {
+        margin-top: 50px;
+    }
+    
+    .intro-title {
+        font-size: 70px;
+        font-weight: 800;
+        color: #fff;
+    }
+    
+    .top-headline {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-bottom: 30px;
+    }
+    
+    .white-text {
+        color: white;
+    }
+    
+    .section-title {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    
+    .spinny-words {
+        height: 85px;
+        position: relative;
+    }
+    
+    .spinny-words span {
+        position: absolute;
+        font-weight: 1000;
+        font-size: 59px;
+        text-transform: uppercase;
+        opacity: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .spinny-words-1 span {
+        animation: rotateWord 18s linear infinite 0s;
+    }
+    
+    .spinny-words span:nth-child(2) {
+        animation-delay: 3s
+    }
+    
+    .spinny-words span:nth-child(3) {
+        animation-delay: 6s
+    }
+    
+    .spinny-words span:nth-child(4) {
+        animation-delay: 9s
+    }
+    
+    .spinny-words span:nth-child(5) {
+        animation-delay: 12s
+    }
+    
+    .spinny-words span:nth-child(6) {
+        animation-delay: 15s
+    }
+    
+    @keyframes rotateWord {
+        0% {
+            opacity: 0
+        }
+        2% {
+            opacity: 0;
+            transform: translateY(-30px)
+        }
+        5% {
+            opacity: 1;
+            transform: translateY(0px)
+        }
+        17% {
+            opacity: 1;
+            transform: translateY(0px)
+        }
+        20% {
+            opacity: 0;
+            transform: translateY(30px)
+        }
+        80% {
+            opacity: 0
+        }
+        100% {
+            opacity: 0
+        }
+    }
+    
+    .icon-size {
+        height: 20px;
+        width: 20px;
+        margin: 0px 7px 0px 7px;
+    }
+    
+    .custom-dropdown-menu:hover {
+        background-color: #282a39;
+    }
+    
+    .custom-dropdown-color {
+        background-color: #282a39;
+    }
+    
+    .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+    /* practice */
+    
+    input {
+        outline: none;
+        color: #fff;
+    }
+    
+    input[type=search] {
+        -webkit-appearance: textfield;
+        box-sizing: content-box;
+        font-size: 100%;
+        color: #fff;
+    }
+    
+    input::-webkit-search-decoration,
+    input::-webkit-search-cancel-button {
+        display: none;
+    }
+    
+    input[type=search] {
+        background: transparent url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+        border: solid 1px transparent;
+        padding: 0px 0px 0px 32px;
+        width: 55px;
+        -webkit-border-radius: 10em;
+        -moz-border-radius: 10em;
+        border-radius: 10em;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        transition: all .5s;
+        color: solid #fff;
+    }
+    
+    input[type=search]:focus {
+        width: 130px;
+        background-color: #282a39;
+        border-color: transparent;
+    }
+    
+    input:-moz-placeholder {
+        color: #fff;
+    }
+    
+    input::-webkit-input-placeholder {
+        color: #fff;
+    }
+    
+    .row button:hover {
+        color: #348FFF;
+        box-shadow: 0 0 3px #348fff;
+    }
+    
+    .row button {
+        color: #fff;
+        border: 10px 10px 10px 10px;
+        border-color: #348fff;
+        padding: 0px 15px 0px 15px;
+        margin: 0px 10px 0px 10px;
+        transition: 0.5s;
+    }
+</style>
+
+<body class="custom-bg">
+    <div class="container-fluid custom-container white-text">
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark custom-bg">
+            <a href="../../../index.html" class="topleft">
+                <img id="img" src="../../../logos/kuma_logosupernew.png" alt="Kumakuma">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse custom-transition justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-sm-2 custom-margin" id="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item un">
+                        <form>
+                            <a class="nav-link white-text"> <input type="search" placeholder="Search"></a>
+                        </form>
+                    </li>
+                    <li class="nav-item un">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Anime</a>
+                        <div class="dropdown-menu custom-dropdown-color">
+                            <a class="dropdown-item custom-dropdown-menu un text-left" href="../../seasonal.html">Seasonal</a>
+                            <a class="dropdown-item custom-dropdown-menu un text-left" href="../airing.html">Airing</a>
+                        </div>
+                    </li>
+                    <li class="nav-item un">
+                        <a class="nav-link" href="../../login.html">Login</a>
+                    </li>
+                    <li class="nav-item un">
+                        <a class="nav-link" href="../../register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Contents -->
+        <div class="container white-text" style="padding-top: 200px;">
+            <p><b style="font-size: 35px;">Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen - 01</b></p>
+            <!-- 21:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://fcdn.stream/v/qy5gmhenn25m-rj" allowfullscreen scrolling="no"> </iframe>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col text-right">
+                    <button type="submit" class="btn white-text" onclick="document.location='kimi_ep2.html'">  Next Episode |>></button>
+                </div>
+            </div>
+            <br>
+            <hr><br>
+            <h5>&ensp;Related Episodes:</h5>
+            <br>
+            <div class="row" style="padding-left: 70px;">
+                <button type="submit" class="btn white-text" onclick="document.location='kimi_ep2.html'"> Episode | 02 </button>
+                <button type="submit" class="btn white-text" onclick="document.location='kimi_ep3.html'"> Episode | 03 </button>
+                <button type="submit" class="btn white-text" onclick="document.location='kimi_ep4.html'"> Episode | 04 </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Contents -->
+
+    <!-- Footer -->
+    <br><br><br>
+    <footer>
+        <div class="row justify-content-center white-text">
+            <img src="../../../logos/kuma_logosupernew.png" alt="Kumakuma.tv">
+        </div>
+        <div class="row justify-content-end" style="padding-right: 9px;">
+            <a href=""><img src="../../../icons/fb_bnw.png" class="icon-size" alt="Facebook"></a>
+            <a href=""><img src="../../../icons/twitter_bnw.png" class="icon-size" alt="Twitter"></a>
+            <a href=""><img src="../../../icons/discord_bnw.png" class="icon-size" alt="Discord"></a>
+        </div>
+        <hr style="margin-bottom: 30px;">
+        <div class="row white-text" style="padding: 0px 0px 0px 14px;">
+            <p style="font-size: 14px;">Copyright © 2020 &ensp;| &ensp;<a href="../../../index.html"> Kumakuma.tv </a> &ensp;|&ensp; John Carlo Villas </p>
+        </div>
+    </footer>
+    </div>
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.padding = "0px 100px 0px 110px";
+                document.getElementById("img").style.height = "auto";
+                document.getElementById("img").style.width = "110px";
+                document.getElementById("navbar").style.background = "#282a39";
+                document.getElementById("navbar").style.boxShadow = "0px 0px 15px #0C0C0D";
+                document.getElementById("navbar-nav").style.padding = "10px 0 0 0";
+                // document.getElementById("active ").style.
+            } else {
+                document.getElementById("navbar").style.padding = "15px 100px 0px 120px";
+                document.getElementById("img").style.height = "auto";
+                document.getElementById("img").style.width = "100%";
+                document.getElementById("navbar").style.background = "transparent";
+                document.getElementById("navbar").style.boxShadow = "0 0 0px #0C0C0D";
+                document.getElementById("navbar-nav").style.margin = "5px 0 0 0";
+            }
+        }
+    </script>
+</body>
+
+</html>
